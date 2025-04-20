@@ -1,0 +1,72 @@
+﻿body {
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #ef5350;
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header input {
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 200px;
+    border: none;
+}
+
+header button {
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination {
+    margin: 2rem;
+}
+
+.pagination button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    background-color: #ef5350;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.pokemon-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.pokemon-card:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+.pokemon-card img {
+    width: 100px;
+    height: 100px;
+}
